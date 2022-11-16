@@ -25,7 +25,7 @@ class RegisterUsers extends React.Component {
     }
     setFieldValue = (e) => {
             let user = this.state.user;
-            let errorList = this.state.errorList;
+           // let errorList = this.state.errorList;
             let fieldName = e.target.id;
             let fieldValue = trim(e.target.value);
             user[fieldName] = fieldValue;
@@ -151,7 +151,7 @@ class RegisterUsers extends React.Component {
             }
             else {
                 UserService.isUsernameExists(fieldValue).then((res) => {
-                    let data = res.data;
+                   // let data = res.data;
                     if (res.data === true) {
                         errorMsgs.userNameMsg = 'Username already exists';
                         isValid = false;
