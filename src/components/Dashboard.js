@@ -1,6 +1,5 @@
 import React from "react";
 import { trim } from 'lodash';
-//import { styles } from '../css/styles.css'
 import CourseService from '../services/CourseService';
 import { withRouter } from "../withRouter";
 import { login } from '../features/user';

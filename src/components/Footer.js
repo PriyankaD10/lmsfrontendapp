@@ -1,5 +1,4 @@
 import React from "react";
-//import { isEmpty, trim } from 'lodash';
 
 class Footer extends React.Component {
 
