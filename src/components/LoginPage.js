@@ -62,7 +62,7 @@ class LoginPage extends React.Component {
                 this.props.navigate("/dashboard");
             }else{
                 alert("Failed login.Please try again");
-                this.props.navigate("/")
+                this.props.navigate("/");
             }
         })
     }

@@ -64,7 +64,7 @@ class AddCourse extends React.Component {
             }
             else {
                 CourseService.isCourseNameExists(fieldValue).then((res) => {
-                    let data = res.data;
+                    //let data = res.data;
                     if (res.data === true) {
                         errorMsgs.courseNameMsg = 'Course name already exists';
                         isValid = false;

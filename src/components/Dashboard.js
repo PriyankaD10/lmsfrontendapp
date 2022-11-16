@@ -1,5 +1,5 @@
 import React from "react";
-import { isEmpty, trim } from 'lodash';
+import { trim } from 'lodash';
 //import { styles } from '../css/styles.css'
 import CourseService from '../services/CourseService';
 import { withRouter } from "../withRouter";
@@ -70,7 +70,7 @@ class Dashboard extends React.Component {
     signOut = (e) => {
         let userInfo = this.state.userInfo;
         console.log(JSON.stringify(userInfo))
-        let loginInfo =  new Object();
+        let loginInfo =  {};
         loginInfo.isLoggedIn =false;
         loginInfo.status ="OK";
         loginInfo.user = userInfo;
@@ -162,7 +162,7 @@ class Dashboard extends React.Component {
         return (
             <div style={{ width: "100%", padding: "2%" }}>
                 <h6 className="text-right">Hi, {this.state.userInfo ? this.state.userInfo.username : null}</h6>
-                <a href="#" onClick={this.signOut} className="text-right" style={{float:"right"}}><span>Sign out</span></a>
+                <a href="/login" onClick={this.signOut} className="text-right" style={{float:"right"}}><span>Sign out</span></a>
                 <h6 className="text-left">Search Course</h6>
                 <div className="row">
                     {this.getSearchComponent()}
