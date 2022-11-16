@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const USER_API_LOGIN_URL = 'https://lmsuserservice.azurewebsites.net/users/login'
 const USER_API_USERNAME_EXIST_URL = 'https://lmsuserservice.azurewebsites.net/users/exists'
-const USER_API_REGISTER_USER_URL = 'http://localhost:9013/users/register'
+const USER_API_REGISTER_USER_URL = 'https://lmsuserservice.azurewebsites.net/users/register'
 
 class UserService {
     login(user){
