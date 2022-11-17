@@ -73,13 +73,13 @@ class RegisterUsers extends React.Component {
     }
 
     errorList = () => {
-        let errors = this.state.errorList;
+        /* let errors = this.state.errorList;
         const listItems = errors.map((d, i) => <li className="error" key={i}>{d}</li>);
         return (
-            <div>
+            <div>s
                 {listItems}
             </div>
-        )
+        ) */
     }
 
     resetFieldValue = () => {
@@ -106,7 +106,7 @@ class RegisterUsers extends React.Component {
     }
     renderForm = () => {
         let showErrorMessages = false;
-        let errorList = this.state.errorList;
+        let errorList = [];
         if (errorList.length > 0) {
             showErrorMessages = true;
         }
